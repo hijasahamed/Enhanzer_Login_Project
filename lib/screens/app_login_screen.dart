@@ -61,7 +61,7 @@ class _AppLoginScreenState extends State<AppLoginScreen> {
           MaterialPageRoute(builder: (context) => UserDetailsScreen()),
         );
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text("Login Success: ${responseData['Message']}")),
+            SnackBar(content: Text("Login Success: ${responseData['Message']}"),backgroundColor: Colors.green),
           );
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
